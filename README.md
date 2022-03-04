@@ -14,7 +14,7 @@ The results of our analysis are as follows:
 
     -- June Temperature Findings:
     
-![June Statistics](/Images/june_statistics.png)
+![June Statistics](/Images/June_statistics.png)
 
     -- December Temperature Findings:
   
