@@ -33,13 +33,13 @@ Based on the weather-related data included in the SQLite database, it appears th
 
 ### Comparison of Precipitation Statistics between June and December
 
-- - The following tables of Summary Statistics compare the Temperature Observations between June and December:
+- - The following tables of Summary Statistics compare the Precipitation Observations between June and December:
 
-    -- June Temperature Findings:
+    -- June Precipitation Findings:
     
 ![June Statistics](/Images/june_precipitation.png)
 
-    -- December Temperature Findings:
+    -- December Precipitation Findings:
   
 ![December Statistics](/Images/december_precipitation.png)
 
