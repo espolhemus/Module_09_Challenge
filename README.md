@@ -2,10 +2,10 @@
 Module 09 - Surf's Up Challenge
 
 ## Overview of Project
-This project involves using Jupyter Notebooks, SQLite, pandas, numpy, and SQLite to anaylyze weather-related data drawn from various weather stations on the island of Oahu. 
+This project involves using Jupyter Notebooks, SQLite, pandas, numpy, and SQLite to analyze weather-related data drawn from various weather stations on the island of Oahu. 
 
 ### Purpose
-The purpose of this challenge is to take an SQLite databse containing weather observations from multiple reporting stations spanning a number of years, execute SQL queries to parse the data, and present the underlying data in a manner that will allow for informed business decisions to be made regarding the viability of opening a Surf Shop in the area.  
+The purpose of this challenge is to take an SQLite database containing weather observations from multiple reporting stations spanning a number of years, execute SQL queries to parse the data, and present the underlying data in a manner that will allow for informed business decisions to be made regarding the viability of opening a Surf Shop in the area.  
 
 ## Results
 The results of our analysis are as follows:
@@ -43,8 +43,14 @@ Based on the weather-related data included in the SQLite database, it appears th
   
 ![December Statistics](/Images/december_precipitation.png)
 
-### Precipitation-Free Days, June and December
+### Precipitation-Free Days
 
-- Of the employees approaching retirement eligibility  age, 25,916 currently hold the title "Senior Engineer" and 24,926 hold the title "Senior Staff" - however, the percentage of total employees within each Job Title approaching retirement eligibility is consistent across nearly all Job Titles, at approximately 30%.  The following table details the percentage of total employees by Title who are approaching retirement eligibility age:
+- Furthermore, by constructing a query similar to the example below, and plotting the results, we can get a better sense as to how many precipitation-free days there, and we can gain a better understanding of the amount of precipitation that falls on those days where there is measurable precipitation, which will help us determine whether or not the number of days with significant rainfall would be material to the success of our proposed Surf Shop
+ 
+    -- results = session.query(Measurement.prcp, (func.count(Measurement.date))).group_by(Measurement.prcp).all()
     
-![percentages_by_title](/Images/percentages_by_title.png)
+    -- Precipitation Histogram:
+  
+![Precipitation Histogram](/Images/precipitation_histogram.png)
+    
+    
